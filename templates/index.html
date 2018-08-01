@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hello world</title>
+</head>
+<body>
+	<h1>Hello world!</h1>
+	<h2>Person form</h2>
+	<div>
+		<form action="https://aqueous-earth-28377.herokuapp.com/person" method="POST">
+		  <label for="firstName">First name:</label><br>
+		  <input type="text" name="firstName" value="">
+		  <br>
+		  
+		  <label for="lastName">Last name:</label><br>
+		  <input type="text" name="lastName" value="">
+		  <br>
+
+		  <label for="age">Age:</label><br>
+		  <input type="number" name="age" value="">
+		  <br>
+		  
+		  <label for="glasses">Has glasses?:</label><br>
+		  <select name="glasses" id="hasGlasses">
+		  	<option value="true">Yes</option>
+		  	<option value="false">No</option>
+		  </select>
+		  <br><br>
+
+		  <input type="submit" value="Submit">
+		</form>
+	</div>
+	<br>
+	<div>
+		<form action="/person">
+			<input type="submit" value="View all people">
+		</form>
+	</div>
+	<br>
+	<div>
+		<form action="/feelingLucky">
+			<input type="submit" value="I'm feeling lucky">
+		</form>
+	</div>
+
+</body>
+</html>
